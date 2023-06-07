@@ -6,8 +6,8 @@ class DefenderScene extends Phaser.Scene {
         //loadFont("witchkin", "assets/witchkin.ttf");
         this.load.image('star','Assets/star.png')
         this.load.image('turret','Assets/turretplaceholder.png')
-     
-
+        
+        this.pre_load()
     }
     create() {
         this.transitionDuration = 1000;
@@ -18,19 +18,27 @@ class DefenderScene extends Phaser.Scene {
 
         this.cameras.main.setBackgroundColor('#000');
         //Ship and Starfield Background
-        this.add.particles(this.w*1.3, 0, 'star', {
+        this.particle_system = this.add.particles(this.w*1.3, 0, 'star', {
             y: { min: 0, max: this.h },
             quantity: 2,
             lifespan: 7000,
-            gravityX: -200
+            gravityX: -200,
+            //speedX: -150,
         });
         this.cameras.main.fadeIn(this.transitionDuration, 0, 0, 0);
         //this.input.on('pointerup', this.handlePointerUp(pointer))
         let testTurret = this.createTurretSprite(this.w*.5,this.h*.5);
+        
+        this.thisturr = testTurret;
         this.input.on('pointerup', (pointer) => {
             this.handlePointerUp(pointer, testTurret)
         });
 
+        var spaceBar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+        spaceBar.on('down', ()=>{
+            console.log("CLEARING LOCAL STORAGE")
+            localStorage.clear();
+        })
         this.onEnter();
 
 
