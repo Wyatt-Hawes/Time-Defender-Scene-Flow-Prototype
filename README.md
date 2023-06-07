@@ -20,18 +20,3 @@ Link: https://wyatt-hawes.github.io/Time-Defender-Scene-Flow-Prototype/
 
 - Transitions: There are coordinated fades between all of the scenes.
 
-
-
-Selectable requirements: (maybe choose 3)
------------------
-- Data-driven experience progression
-- Advanced visual assets
-- **Featherweight (less than one megabyte) - Stretch Goal**
-- Procedural audio
-- **Procedural graphics**
-- **Complete closed captioning**
-- Alternate control device
-- Networked/connected gameplay
-- Narrative tech integration
-- {something you propose}: As few buttons as possible
-
