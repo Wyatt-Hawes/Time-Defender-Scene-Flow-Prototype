@@ -14,7 +14,7 @@ Link: https://wyatt-hawes.github.io/Time-Defender-Scene-Flow-Prototype/
 -------------
 - Scene Types: There is a main title scene, credits scene, gameplay scene, and a menu settings bar on the main title scene
 
-- Communication between scenes: After watching the logo once, the game will remember that and will not show it to you again. It will also load the title scene without any fade-ins, communicating the state to it. (You can press the spacebar on the title screen to reset the localStorage)
+- Communication between scenes: After watching the logo once, the game will remember that and will not show it to you again. It will also load the title scene without any fade-ins, communicating the state to it. (You can press the spacebar on the title screen to reset the localStorage) Look under src/logo.js at like 15 and src/intro.js at like 291
 
 - Reachability: All screens are reachable by clicking on different buttons, play, credits, and options respectively 
 
