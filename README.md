@@ -8,23 +8,18 @@ Technology Lead - Lumina Kinsinger-Dang
 
 Testing Lead - Ethan Earle
 
+Link: https://wyatt-hawes.github.io/Time-Defender-Scene-Flow-Prototype/
 
-# **CMPM120 Final Project**
+# **Requirements**
 -------------
-Requirements:
-Theme: Nearby in space, but distant in time.
-Integration:
-Narrative or visual art (~time travel story)
-Mechanics (~time travel puzzles)
-Technical implementation (~geolocation/clock)
-Audience (~relates to a deep memory of someone close to you)
+- Scene Types: There is a main title scene, credits scene, gameplay scene, and a menu settings bar on the main title scene
 
-Core Requirements:
---------
-- Smooth experience of full-screen play in a mobile browser.
-- User is capable of learning to play from within the game (not consulting outside instructions).
-- User is capable of toggling background music from within the game, and this preference is saved across sessions.
-- Core gameplay can be reached within 1 minute, and an experienced player can complete the experience within 10 minutes (3–5 preferred).
+- Communication between scenes: After watching the logo once, the game will remember that and will not show it to you again. It will also load the title scene without any fade-ins, communicating the state to it. (You can press the spacebar on the title screen to reset the localStorage)
+
+- Reachability: All screens are reachable by clicking on different buttons, play, credits, and options respectively 
+
+- Transitions: There are coordinated fades between all of the scenes.
+
 
 
 Selectable requirements: (maybe choose 3)
